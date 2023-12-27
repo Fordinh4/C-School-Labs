@@ -1,0 +1,2 @@
+total 1.0K
+drwx------ 3 qdinh qdinh 6 Sep 10 12:29 CMPUT201

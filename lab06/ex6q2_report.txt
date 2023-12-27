@@ -1,0 +1,28 @@
+
+Title: Stooge Sort
+
+Description:
+Stooge Sort is a recursive sorting algorithm that works by dividing the array into overlapping segments and recursively sorting them. Specifically, it starts by comparing and possibly swapping the first and last elements. If the array has more than 2 elements, it recursively sorts the initial two-thirds, then the last two-thirds, and then the initial two-thirds again.
+
+Worst Case Asymptotic Run Time:
+O(n^(log 3 / log 1.5)) = O(n^2.709)
+
+Best Case Asymptotic Run Time:
+O(n^(log 3 / log 1.5)) = O(n^2.709)
+
+Advantages of this Algorithm:
+1. Simple and straightforward to understand.
+2. Requires no additional memory for storage (in-place).
+3. The algorithm has a consistent runtime, regardless of the initial order of the array.
+
+Drawbacks of this Algorithm:
+1. Highly inefficient for larger lists due to its exponential time complexity.
+2. Rarely used in practical applications due to better available alternatives.
+3. Overlapping recursive calls lead to repeated work.
+
+In what situation, in software development or research, would you choose this algorithm over Quicksort?
+- Stooge Sort might be chosen in scenarios where the dataset is relatively small and the inefficiencies of the algorithm won't have a significant impact. 
+
+When would you choose it over Selection Sort?
+- Stooge Sort and Selection Sort both have quadratic time complexities, but their behaviors are different. If a system has been observed to perform better with the recursive nature of Stooge Sort over the iterative nature of Selection Sort for specific input patterns or system constraints, then Stooge Sort might be preferred.
+
